@@ -31,8 +31,8 @@ To use this NER system, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/ner-system.git
-    cd ner-system
+    git clone https://github.com/shivamsingh-ml/Named-Entity-Recognition.git
+    cd Named-Entity-Recognition
     ```
 2. Install the required dependencies:
     ```bash
@@ -50,7 +50,7 @@ To test the model on sample text, run the following command:
 ```python
 import spacy
 
-nlp = spacy.load("path/to/your/retrained_model")
+nlp = spacy.load("model-best")
 doc = nlp("Barack Obama was the 44th President of the United States.")
 
 for ent in doc.ents:
